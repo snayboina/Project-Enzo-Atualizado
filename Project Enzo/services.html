@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="Fancis">
+	<title>Services</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>		 
+		  <div class="container">
+		  	<div id="branding">
+		  		<h1>Project <span>Enzo</span></h1>
+		  	</div>
+		  	 <nav>
+		  		<ul>
+		  			<li ><a href="index.html">Home</a></li>
+		  			<li><a href="about.html">About</a><li>
+		  			<li class="services"><a href="services.html">Services</a></li>	
+		  		</ul>
+		  	</nav>
+		  </div>
+	</header>
+
+	
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Assine a Nossa Newsletter</h1>
+			<form>
+				<input type="email" placeholder="Enter Email...">
+				<button type="submit" class="button_1">Subscribe</button>
+			</form>
+		</section>
+
+		<section id="main">
+			<div class="container">
+				<article id="main-col">
+					<h1 class="page-title">Services</h1>
+					<ul id="services">
+						<li>
+							<h3>Website Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sunt ipsam voluptatibus asperiores iusto voluptas quae et repellat temporibus atque maxime modi, quas tempora enim, voluptatem recusandae cumque laudantium neque.</p>
+							<p>Pricing: $1,000 - $3,000</p>
+						</li>
+
+						<li>
+							<h3>Website Maintenance</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sunt ipsam voluptatibus asperiores iusto voluptas quae et repellat temporibus atque maxime modi, quas tempora enim, voluptatem recusandae cumque laudantium neque.</p>
+						   <p>Pricing: $250 per month</p>
+						</li>
+
+						<li>
+							<h3>Website Hosting</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sunt ipsam voluptatibus asperiores iusto voluptas quae et repellat temporibus atque maxime modi, quas tempora enim, voluptatem recusandae cumque laudantium neque.</p>
+							<p>Pricing: $25 per month</p>
+						</li>
+					</ul>
+
+										
+				</article>
+
+				<aside id="sidebar">
+				 <div class="dark">
+					<h3>Get A Quote</h3>
+			  <form class="quote">
+
+			     <div>
+			     	<label>Name</label><br>
+			     	<input type="text" placeholder="Name">
+			     </div>
+
+			     <div>
+			     	<label>Email</label><br>
+			     	<input type="email" placeholder="Email Address">
+			     </div>
+
+			     <div>
+			     	<label>Menssage</label><br>
+			     	<textarea placeholder="Menssage"></textarea>
+			     </div>
+			     <button class="button_1" type="submit">Send</button>
+			 </form>
+
+				</div>
+
+				</aside>					
+
+			  </div>
+		   </section>
+
+	       <footer>
+			<p>A new technology is coming !!! &copy; 2019	</p>
+		   </footer>
+
+		   <script>
+  function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+  }
+  const titulo = document.querySelector('.h1');
+  typeWriter(titulo);
+</script>
+		</body>
+		</html>

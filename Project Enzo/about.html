@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="Fancis">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>		 
+		  <div class="container">
+		  	<div id="branding">
+		  		<h1>Project <span>Enzo</span></h1>
+		  	</div>
+		  	 <nav>
+		  		<ul>
+		  			<li ><a href="index.html">Home</a></li>
+		  			<li class="about"><a href="about.html">About</a><li>
+		  			<li><a href="services.html">Services</a></li>	
+		  		</ul>
+		  	</nav>
+		  </div>
+	</header>
+
+	
+
+	<section id="newsletter">
+		<div class="container">
+			<h1 class="h1">Assine a Nossa Newsletter</h1>
+			<form>
+				<input type="email" placeholder="Enter Email...">
+				<button type="submit" class="button_1">Subscribe</button>
+			</form>
+		</section>
+
+		<section id="main">
+			<div class="container">
+				<article id="main-col">
+					<h1 class="page-title">About Us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, iure, voluptatibus. Dicta quidem blanditiis in commodi odit, saepe laboriosam molestias laborum provident! Earum aperiam, et accusantium quaerat ratione? Necessitatibus, officiis, earum! Officia odit cum, culpa illo commodi quae facere voluptas temporibus, deleniti corporis mollitia, sed! Molestiae deserunt quasi esse animi suscipit incidunt, repellat vel, doloremque fugit.</p>
+					<p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, iure, voluptatibus. Dicta quidem blanditiis in commodi odit, saepe laboriosam molestias laborum provident! Earum aperiam, et accusantium quaerat ratione? Necessitatibus, officiis, earum! Officia odit cum, culpa illo commodi quae facere voluptas temporibus, deleniti corporis mollitia, sed! Molestiae deserunt quasi esse animi suscipit incidunt, repellat vel, doloremque fugit.</p>
+					
+				</article>
+
+				<aside id="sidebar">
+				 <div class="dark">
+					<h3>What We Do</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, iure, voluptatibus. Dicta quidem blanditiis in commodi odit, saepe laboriosam molestias laborum provident! Earum aperiam, et accusantium quaerat ratione? Necessitatibus.</p>
+				</div>
+
+				</aside>					
+
+			  </div>
+		   </section>
+
+	       <footer>
+			<p>A new technology is coming !!! &copy; 2019	</p>
+		   </footer>
+
+		   <script>
+  function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+  }
+  const titulo = document.querySelector('.h1');
+  typeWriter(titulo);
+</script>
+		</body>
+		</html>
